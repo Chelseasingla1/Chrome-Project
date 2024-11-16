@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f5f5f5; /* Light gray background, similar to Gmail */
+    margin: 0;
+    padding: 20px;
+    color: #202124; /* Gmail's primary text color */
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #202124;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background-color: #1a73e8; /* Gmail's blue button color */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  button:hover {
+    background-color: #1558b0; /* Darker blue for hover */
+  }
+  
+  /* Input Fields */
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #dadce0; /* Light border color */
+    border-radius: 4px;
+    font-size: 14px;
+    color: #202124;
+    background-color: white;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #1a73e8; /* Blue focus border */
+    outline: none;
+    box-shadow: 0 0 4px rgba(26, 115, 232, 0.4); /* Light blue shadow */
+  }
+  
+  /* Lists */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: white;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  li:hover {
+    background-color: #f1f3f4; /* Gmail's hover effect color */
+  }
+  
+  /* Links */
+  a {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Containers */
+  .container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Gmail-like card shadow */
+  }
+  
+  .container h1 {
+    margin-top: 0;
+  }
+  
+  /* Back to Main Button */
+  .back-button {
+    display: inline-block;
+    margin-top: 20px;
+    color: #1a73e8;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .back-button:hover {
+    text-decoration: underline;
+  }
+  
+  /* Metadata Output (JSON Display) */
+  pre {
+    background-color: #e8f0fe; /* Light blue background for code-like blocks */
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #202124;
+    overflow-x: auto;
+  }
+  
+  .plus-icon {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px auto;
+  }
+  
+  .plus-icon:hover {
+    background-color: #1558b0;
+  }
+  
+
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #202124;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  ul li {
+    background-color: white;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  ul li:hover {
+    background-color: #f1f3f4;
+    cursor: pointer;
+  }
+  

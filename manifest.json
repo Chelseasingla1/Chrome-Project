@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Gmail Bookmark Manager",
+    "description": "Manage Gmail bookmarks, categories, tags, and reminders.",
+    "version": "1.0",
+    "permissions": ["bookmarks", "storage", "alarms"],
+    "host_permissions": ["https://mail.google.com/*"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": ["popup.html", "bookmarks.html", "edit.html", "metadata.html", "links_files.html", "reminders.html", "add_bookmark.html", "bookmark_details.html"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
+  

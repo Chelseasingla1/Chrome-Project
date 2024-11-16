@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Gmail Bookmark</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Add Gmail Bookmark</h1>
+    <p>Fill out the details below to bookmark a Gmail email:</p>
+    <label for="category">Category:</label>
+    <input type="text" id="category" placeholder="e.g., Work" />
+
+    <label for="tags">Tags:</label>
+    <input type="text" id="tags" placeholder="e.g., Urgent, Follow-Up" />
+
+    <label for="reminder">Reminder:</label>
+    <input type="datetime-local" id="reminder" title="Set a reminder" />
+
+    <button id="bookmarkEmail">Bookmark Gmail Email</button>
+    <button id="backToBookmarks" class="back-button">Back to Bookmarks</button>
+  </div>
+  <script src="add_bookmark.js"></script>
+</body>
+</html>

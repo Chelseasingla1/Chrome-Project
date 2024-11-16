@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Bookmark</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Edit Bookmark</h1>
+  <label for="category">Category:</label>
+  <input type="text" id="category" placeholder="e.g., Work" />
+  <label for="tags">Tags:</label>
+  <input type="text" id="tags" placeholder="e.g., Urgent, Follow-Up" />
+  <button id="saveBookmark">Save</button>
+  <button id="goToBookmarks">Back to Bookmarks</button>
+
+  <script>
+    // Save bookmark metadata
+    document.getElementById("saveBookmark").addEventListener("click", () => {
+      const category = document.getElementById("category").value;
+      const tags = document.getElementById("tags").value.split(",").map(tag => tag.trim());
+      const bookmarkId = "123"; // Replace with the selected bookmark ID
+
+      chrome.storage.local.get(bookmarkId, (data) => {
+        const updatedData = {
+          ...data[bookmarkId],
+          category,
+          tags
+        };
+        chrome.storage.local.set({ [bookmarkId]: updatedData }, () => {
+          alert("Bookmark metadata saved!");
+        });
+      });
+    });
+
+    // Navigate back to bookmarks page
+    document.getElementById("goToBookmarks").addEventListener("click", () => {
+      window.location.href = "bookmarks.html";
+    });
+  </script>
+</body>
+</html>
